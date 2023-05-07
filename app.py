@@ -1,6 +1,6 @@
 from flask import Flask,request
 from flask_cors import CORS,cross_origin
-import easyocr
+#import easyocr
 import cv2
 import numpy as np
 import requests
@@ -8,7 +8,7 @@ import requests
 
 app = Flask(__name__)
 CORS(app)
-
+'''
 
 @app.route('/api/textrec',methods=["GET","POST"])
 def text_rec():
@@ -40,5 +40,5 @@ def text_rec():
     description = response.json()["text"]
 
     return {"text":text,"description":description}
-
+'''
 app.run(debug=True)
