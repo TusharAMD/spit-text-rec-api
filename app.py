@@ -41,4 +41,4 @@ def text_rec():
 
     return {"text":text,"description":description}
 
-app.run(debug=True)
+app.run(debug=False)
